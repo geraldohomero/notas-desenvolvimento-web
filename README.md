@@ -69,6 +69,7 @@ Dessa forma, podemos descrever o protocolo HTTP como um conjunto de regras que d
 
 >[HTTP - Mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
 ## URI
+>[RCF 2616 - Hypertext Transfer Protocol - HTTP/1.1](https://www.rfc-editor.org/rfc/rfc2616)
 
 `URI` (Uniform Resource Identifier) é um padrão para o endereçamento de recursos disponíveis na rede que engloba os conceitos de `URL` (Uniform Resource Locator) e `URN` (Uniform Resource Name).
 
@@ -110,3 +111,27 @@ Um site da Internet tem seus arquivos e todas as demais informações mantidas e
 - Auditoria (Logs de acesso, sistema e erros).
 
 >[O que é um servidor web (web server) - Mozilla.org](https://developer.mozilla.org/pt-BR/docs/Learn/Common_questions/What_is_a_web_server)
+
+***
+# HTML
+
+![html](./img/html.png)
+
+
+## Estrutura de um documento HTML
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content ="name"> contém atributos
+    </head>
+    <body>
+        <h1> título </h1>
+        <p> parágrafo </p>
+    </body>
+</html>
+```
+
+- Elementos: `<tag>` conteúdo `</tag>`
+
+- Atributos: `nome`=`"valor"`
