@@ -318,7 +318,23 @@ Com o HTML 5, foram criados vários elementos novos com significados específico
 - `action` indica qual a URL a ser disparada para processamento do formulário;
 - `method` indica como o formulário será submetido via requisição HTTP (POST ou GET).
 
+```html
+<form name="form_login" action="_do_login.html" method="POST">
+    Usuário: <input type="text" name="usuário" value=""><br>
+    Senha: <input type="password" name="senha" value=""><br>
+    <input type="submit" value="Ok">
+</form>
+```
+>[Código de exemplo](./src/form-simples.html)
 
+>[Código de exemplo - Formulário](./src/form-completo.html)
 
+`<input>` é  elemento mais comum nos formulários. Este elemento define campos ou entradas de dados e possui os seguintes atributos:
 
+- O atributo `type` identifica o tipo do campo: text, number, password, email, date, submit, radio, checkbox;
+- O atributo `name` identifica o campo do formulário;
+- O atributo `value` trata o valor contido no campo;
+- O atributo `placeholder` permite incluir um valor de exemplo apresentado pelo Navegador quando o campo estiver vazio;
+- O atributo `required` permite a validação automática de um campo evitando que o usuário submeta o formulário com o campo vazio;
+- O atributo `disabled` inativa o campo e não permite ao usuário interagir, apenas visualizar o valor definido no código HTML.
 # CSS
