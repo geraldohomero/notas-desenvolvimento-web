@@ -14,6 +14,13 @@
 - [HTML](#html)
     - [HTML e CSS - associando](#html-e-css---associando)
     - [Estrutura do documento - Cabeçalho](#estrutura-do-documento---cabeçalho)
+    - [Listas](#listas)
+    - [Imagem](#imagem)
+    - [Link](#link)
+    - [Elementos estruturais](#elementos-estruturais)
+    - [Tabelas](#tabelas)
+    
+
 <!--te-->
 
 ***
