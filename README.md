@@ -181,6 +181,7 @@ h1 {
 <html lang="pt-br">
     <head> <!-- Cabeçalho -->
         <title>Exemplo</title>
+        <meta charset="UTF-8">
         <meta name="author" content ="Geraldo Homero">
         <meta name="descripton" content="teste e exemplo de HTML">
         <meta name="keywords" content="palavra-chave, html, web, css">
