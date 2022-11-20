@@ -136,6 +136,15 @@ Um site da Internet tem seus arquivos e todas as demais informações mantidas e
 
 - Atributos: `nome`=`"valor"`
 
+>O `DOCTYPE` indica ao browser qual a versão do HTML está sendo utilizada no documento, alternando entre `quirks mode` e `strict mode`
+- HTML5
+    - `<!DOCTYPE html>`
+- HTML 4.01
+    - `<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">`
+- HTML 1.0
+    - `<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">`
+
 ## HTML e CSS - associando
 
 - HTML
@@ -161,4 +170,25 @@ h1 {
 .noticias {
     font-family: arial;
 }
+```
+
+## Estrutura do documento - CABEÇALHO
+
+- Representada pela tag `<head>`, que inclui os metadados, referências, estilos...
+
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> <!-- Cabeçalho -->
+        <title>Exemplo</title>
+        <meta name="author" content ="Geraldo Homero">
+        <meta name="descripton" content="teste e exemplo de HTML">
+        <meta name="keywords" content="palavra-chave, html, web, css">
+        <link rel="stylesheet" href="./style.css">
+        ...
+        ...
+        ...
+    </head> <!-- Fim do Cabeçalho -->
+    <body>...</body>
+</html>
 ```
