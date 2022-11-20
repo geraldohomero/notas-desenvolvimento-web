@@ -139,6 +139,7 @@ Um site da Internet tem seus arquivos e todas as demais informações mantidas e
 ## HTML e CSS - associando
 
 - HTML
+
 ```html
 ...
 <h1 id="titulo1" class="noticias">
@@ -146,6 +147,7 @@ Um site da Internet tem seus arquivos e todas as demais informações mantidas e
 </h1>
 ```
 - CSS
+
 ```css
 /* pelo nome do elemento */
 h1 {
