@@ -199,3 +199,106 @@ h1 {
     <body>...</body>
 </html>
 ```
+
+|Elementos|Tags|
+|---------|----|
+|Títulos| `<h1>` .. `</h1>`, `<h2>` .. `</h2>`, ... , `<h6>` ...`</h6>`|
+|Paragráfos|`<p>` .. `</p>`|
+|Quebra de linha| `<br>`|
+|Voz alternativa (itálico)| `<i>` .. `</i>`|
+|Palavra-chave (negrito)| `<b>` .. `</b>`|
+|Importância|`<strong>` .. `</strong>`|
+|Código fonte|`<code>` ... `</code>`|
+|Texto pré-formatado| `<pre>` .. `</pre>`|
+|Citações|`<blockquote>` .. `</blockquote>`|
+
+## Listas
+### Ordenada `(<ol> .. </ol>)`, não ordenada `(<ul> .. </ul)` e definições `(<dl> .. </dl>)`. 
+
+```html
+...
+<ol> 
+  <li> primeiro item</li>
+  <li> segundo item</li>
+  <li> terceiro item</li>
+</ol>
+...
+```
+>As listas de definições apresentam os itens e suas definições indentadas. Essas listas possuem elementos específicos para os termos `(<dt> .. </dt>)` e para as suas definições `(<dd> .. </dd>)`, conforme mostrado no exemplo a seguir. 
+
+```html
+...
+<dl> 
+  <dt> termo 01</dt>
+  <dd> definição 01</dd>
+  <dt> termo 02</dt>
+  <dd> definição 02</dd>
+</dl>
+...
+```
+
+## Imagem
+
+```html
+  <img width="200" height="180"
+      src="exemploArquivo.jpg" alt="Descrição da img."> 
+```
+
+## Link
+
+```html
+  <a href="http://linkexemplo.com" target="_blank"> Texto link exemplo </a>
+```
+>O atributo `target` define onde o documento apontado pelo link será aberto e aceita os valores:  
+
+- `_blank` – para nova janela ou tab,
+- `_self` – para a mesma janela – default,
+- `_parent` – para a o frame pai,
+- `_top` – para a janela atual inteira ou
+- `nome_do_frame` – para um frame específico.
+
+>[Free guide to HTML - htmlreference.io](https://htmlreference.io/)
+
+>[HTML: HyperText Markup Language - Mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTML)
+
+## Elementos estruturais
+
+Com o HTML 5, foram criados vários elementos novos com significados específicos, porém com a mesma funcionalidade do elemento `<div>`, ou seja, agrupar outros elementos de uma página. Esses elementos, muitas vezes denominados `elementos semânticos`, trouxeram uma gama de possibilidades para o desenvolvedor. 
+
+|Elementos|	Descrição|
+|--------|-----------|
+|`<article>`|	Define um artigo.|
+|`<aside>`	|Define conteúdo além do conteúdo da página.|
+|`<details>`|	Define detalhes adicionais que o usuário pode visualizar ou ocultar.|
+|`<figcaption`>|	Define o título para um elemento `<figure>`.|
+|`<figure>`|	Define um elemento autocontido como ilustração, diagramas, fotos, listagem de código etc.|
+|`<footer>`|	Define um rodapé para o documento ou seção.|
+|`<header>`	|Especifica o cabeçalho para um documento ou seção.|
+|`<main>`|Especifica o conteúdo principal de um documento.|
+|`<mark>	`|Define texto destacado.|
+|`<nav>`	|Define conteúdo de navegação.|
+|`<section>`|	Define uma seção em um documento.|
+|`<summary>`|	Define um resumo visível para um elemento `<details>`.|
+|`<time>`|Define uma data/hora.|
+
+![html-estrutura](./img/html-estrutura.png)
+
+>[Semantic in HTML](https://htmlreference.io/semantic/)
+
+>[Document and website structure - Mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure)
+
+## Tabelas
+
+|Elementos|	Descrição|
+|---------|----------|
+|`<table>`|	Elemento que compreende toda a tabela.
+|`<caption>`|	Define o título da tabela.
+|`<thead>`|	Agrupa as linhas de cabeçalho da tabela.
+|`<tbody>`|	Agrupa as linhas de dados da tabela.
+|`<tfoot>`|	Agrupa as linhas de rodapé da tabela.
+|`<tr>`|	Define uma linha da tabela.
+|`<th>`|	Define uma célula do cabeçalho dentro de uma tag <tr>.
+|`<td>`|	Define uma célula de dados dentro de uma tag <tr>.
+
+![Tabela-estrutura](./img/html-tabela-estrutura.png)
+[HTML - Tabela](./src/estrutura-tabela.html)
