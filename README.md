@@ -305,8 +305,8 @@ Com o HTML 5, foram criados vários elementos novos com significados específico
 |`<tbody>`|	Agrupa as linhas de dados da tabela.|
 |`<tfoot>`|	Agrupa as linhas de rodapé da tabela.|
 |`<tr>`|	Define uma linha da tabela.|
-|`<th>`|	Define uma célula do cabeçalho dentro de uma tag <tr>.|
-|`<td>`|	Define uma célula de dados dentro de uma tag <tr>.|
+|`<th>`|	Define uma célula do cabeçalho dentro de uma tag `<tr>`.|
+|`<td>`|	Define uma célula de dados dentro de uma tag `<tr>`.|
 
 ![Tabela-estrutura](./img/html-tabela-estrutura.png)
 [HTML - Tabela](./src/estrutura-tabela.html)
