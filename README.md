@@ -337,4 +337,31 @@ Com o HTML 5, foram criados vários elementos novos com significados específico
 - O atributo `placeholder` permite incluir um valor de exemplo apresentado pelo Navegador quando o campo estiver vazio;
 - O atributo `required` permite a validação automática de um campo evitando que o usuário submeta o formulário com o campo vazio;
 - O atributo `disabled` inativa o campo e não permite ao usuário interagir, apenas visualizar o valor definido no código HTML.
+
+### Elemento `textarea` 
+permite a entrada de texto livre e com várias linhas. O atributo `rows` e `cols` definem o número de linhas e colunas para a apresentação do controle pelo Navegador.  
+
+```html
+<form action="demo.html" method="POST">
+    Texto <br>
+    <textarea name="texto" rows="10" cols="50">
+    Preencha com algum texto
+    </textarea>
+</form>
+```
+
+### Elemento `select`
+```html
+<label for="fruta">Frutas: </label>
+<select name="fruta">
+    <option value ="">Selecione uma Fruta</option>
+    <option value =abacaxi"">Abacaxi</option>
+    <option value ="abacate">Ameixa</option>
+    <option value="uva">Uva</option>
+</select>
+```
+>O atributo `multiple` define se é possível selecionar mais de uma opção. No caso de múltiplas opções, é possível definir com o atributo `size` o tamanho da caixa aberta. 
+
+>[Web forms - Mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Forms)
+
 # CSS
