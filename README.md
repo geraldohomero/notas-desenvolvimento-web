@@ -68,8 +68,9 @@ Para páginas HTML, novas requisições são feitas para outros objetos que pode
 Dessa forma, podemos descrever o protocolo HTTP como um conjunto de regras que definem como as requisições e as respostas devem ser montadas de tal forma que o servidor possa entender o que o cliente está requisitando e como e, também, o cliente possa entender aquilo que é devolvido pelo servidor.
 
 >[HTTP - Mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/HTTP)
-## URI
 >[RCF 2616 - Hypertext Transfer Protocol - HTTP/1.1](https://www.rfc-editor.org/rfc/rfc2616)
+
+## URI
 
 `URI` (Uniform Resource Identifier) é um padrão para o endereçamento de recursos disponíveis na rede que engloba os conceitos de `URL` (Uniform Resource Locator) e `URN` (Uniform Resource Name).
 
