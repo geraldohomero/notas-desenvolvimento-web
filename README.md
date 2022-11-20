@@ -123,7 +123,7 @@ Um site da Internet tem seus arquivos e todas as demais informações mantidas e
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="author" content ="name"> contém atributos
+        <meta name="author" content ="name"> <!--contém atributos-->
     </head>
     <body>
         <h1> título </h1>
@@ -132,6 +132,31 @@ Um site da Internet tem seus arquivos e todas as demais informações mantidas e
 </html>
 ```
 
-- Elementos: `<tag>` conteúdo `</tag>`
+- Elementos: `<tag>` conteúdo `</tag>` | tag de abertura e tag de fechamento
 
 - Atributos: `nome`=`"valor"`
+
+## HTML e CSS - associando
+
+- HTML
+```html
+...
+<h1 id="titulo1" class="noticias">
+    Título
+</h1>
+```
+- CSS
+```css
+/* pelo nome do elemento */
+h1 {
+    color: red;
+}
+/* pelo ID do elemento*/
+#titulo1 {
+    font-size: 33px;
+}
+/* pela classe do elemento*/
+.noticias {
+    font-family: arial;
+}
+```
