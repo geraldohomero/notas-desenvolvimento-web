@@ -299,14 +299,14 @@ Com o HTML 5, foram criados vários elementos novos com significados específico
 
 |Elementos|	Descrição|
 |---------|----------|
-|`<table>`|	Elemento que compreende toda a tabela.
-|`<caption>`|	Define o título da tabela.
-|`<thead>`|	Agrupa as linhas de cabeçalho da tabela.
-|`<tbody>`|	Agrupa as linhas de dados da tabela.
-|`<tfoot>`|	Agrupa as linhas de rodapé da tabela.
-|`<tr>`|	Define uma linha da tabela.
-|`<th>`|	Define uma célula do cabeçalho dentro de uma tag <tr>.
-|`<td>`|	Define uma célula de dados dentro de uma tag <tr>.
+|`<table>`|	Elemento que compreende toda a tabela.|
+|`<caption>`|	Define o título da tabela.|
+|`<thead>`|	Agrupa as linhas de cabeçalho da tabela.|
+|`<tbody>`|	Agrupa as linhas de dados da tabela.|
+|`<tfoot>`|	Agrupa as linhas de rodapé da tabela.|
+|`<tr>`|	Define uma linha da tabela.|
+|`<th>`|	Define uma célula do cabeçalho dentro de uma tag <tr>.|
+|`<td>`|	Define uma célula de dados dentro de uma tag <tr>.|
 
 ![Tabela-estrutura](./img/html-tabela-estrutura.png)
 [HTML - Tabela](./src/estrutura-tabela.html)
