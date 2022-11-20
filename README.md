@@ -20,6 +20,7 @@
     - [Elementos estruturais](#elementos-estruturais)
     - [Tabelas](#tabelas)
     - [Formulários](#formulários)
+- [CSS](#css)
 
 
 <!--te-->
