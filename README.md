@@ -9,6 +9,11 @@
     - [URI](#uri)
     - [URL](#url)
     - [URN](#urn)
+    - [Servidores Web](#servidores-web)
+        - [Funções do web server](#funções-do-servidor-web)
+- [HTML](#html)
+    - [HTML e CSS - associando](#html-e-css---associando)
+    - [Estrutura do documento - Cabeçalho](#estrutura-do-documento---cabeçalho)
 <!--te-->
 
 ***
