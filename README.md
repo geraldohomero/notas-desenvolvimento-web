@@ -421,9 +421,9 @@ let y = "Hello World"; // Declaração com let e com atribuição.
 
 ## Boolean
 
-|Operador	|Exemplo|	Resultado
-|----|------|------|
-|Igual a|	|x == y	|true se x e y são iguais|
+|Operador	|Exemplo|	Resultado|
+|:----:|:------:|:------:|
+|Igual a|	x == y	|true se x e y são iguais|
 |Igual e mesmo tipo|	x === y	|true se x e y são iguais e do mesmo tipo|
 |Não igual a|	x !== y	|true se x e y são diferentes|
 |Maior que	|x > y	|true se x é maior que y|
