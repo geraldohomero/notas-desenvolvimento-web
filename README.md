@@ -365,3 +365,52 @@ permite a entrada de texto livre e com várias linhas. O atributo `rows` e `cols
 >[Web forms - Mozilla.org](https://developer.mozilla.org/en-US/docs/Learn/Forms)
 
 # CSS
+
+# JavaScript
+- Três formas de incluir código JavaScript em uma página web:
+
+    - Arquivos JavaScript externos – uma referência para um arquivo adicional contendo o código a partir de um elemento script;
+    - Blocos Internos – Código inserido dentro de um elemento script na página Web;
+    - Código Inline – porção de código inserido em atributos vinculados a eventos dos elementos da linguagem HTML.
+
+```html
+<!DOCTYPE html> 
+<html> 
+   <head> 
+     <title> Exemplo Javascript </title> 
+     <!-- Usando arquivo Js externo. -->
+     <script type="text/javascript"  src="script.js"> </script>
+
+     <!-- Usando bloco interno.-->
+     <script type="text/javascript">
+        /* código Javascript */
+        alert('Passei por aqui!');
+     </script> 
+   </head>     
+     
+     <!-- Usando código inline. -->
+     <body> 
+        <p  onClick="alert('Você clicou no parágrafo');"> ... </p> 
+     </body> 
+</html>
+```
+>JavaScript é uma linguagem `case sensitive`, portanto, `Nome` é diferente de `NOME` que é diferente de `nome`.
+
+## Variáveis e Constantes
+
+- `var`
+
+>Variável de atuação dentro do escopo global
+
+- `let`
+
+>Variável de atuação dentro do escopo local
+
+`Isso é utilizado quando queremos limitar a área em que uma variável é manipulada`
+```js
+var resultado;         // Declaração com var sem atribuição.
+var x = 0;             // Declaração com var e com atribuição.
+let y = "Hello World"; // Declaração com let e com atribuição.
+```
+
+- `const`
