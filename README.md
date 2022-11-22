@@ -414,3 +414,22 @@ let y = "Hello World"; // Declaração com let e com atribuição.
 ```
 
 - `const`
+
+> `const x = 3.14`
+
+>Diferentemente das variáveis (que podem receber outros valores no decorrer do código), as constantes `não` podem ter seus valores `alterados`. 
+
+## Boolean
+
+|Operador	|Exemplo|	Resultado
+|----|------|------|
+|Igual a|	|x == y	|true se x e y são iguais|
+|Igual e mesmo tipo|	x === y	|true se x e y são iguais e do mesmo tipo|
+|Não igual a|	x !== y	|true se x e y são diferentes|
+|Maior que	|x > y	|true se x é maior que y|
+|Menor que|	x < y	|true se x é menor que y|
+|Maior ou igual a| 	x >= y	|true se x é maior ou igual a y|
+|Menor ou igual a|	x <= y	|true se x é menor ou igual a y|
+|Negativo	|!x	|true se x é false|
+|E exclusivo (ambos true)	|x && y	|true se x e y são true|
+|Ou (pelo menos um true)|	x // y|	true se ou x ou y são true|
