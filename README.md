@@ -20,6 +20,8 @@
     - [Elementos estruturais](#elementos-estruturais)
     - [Tabelas](#tabelas)
     - [Formulários](#formulários)
+        - [Elemento textarea](#elemento-textarea)
+        - [Elemento select](#elemento-select)
 - [CSS](#css)
 - [JavaScript](#javascript)
     - [Variáveis e constantes](#variáveis-e-constantes)
@@ -117,13 +119,13 @@ O `URN` (Uniform Resource Name) é um tipo de `URI` que identifica um recurso es
 
 >[Identificando recursos da web - Mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Basics_of_HTTP/Identifying_resources_on_the_Web)
 
-# Servidores Web
+## Servidores Web
 
 Um site da Internet tem seus arquivos e todas as demais informações mantidas em um ambiente servidor que é responsável, em primeira instância, por servir essas informações para os usuários que requisitam o referido site. O ambiente servidor pode ser composto por várias peças, mas a principal delas é um software ou programa denominado Servidor Web. Este software é o responsável por processar a requisição feita por um cliente Web (navegador da Internet ou outra aplicação qualquer) e prover os recursos solicitados. A imagem a seguir apresenta em mais detalhes a arquitetura da Web com foco no ambiente Servidor.
 
 ![Servidor-web](./img/servidor-web.png)
 
-## Funções do Servidor web
+### Funções do Servidor web
 
 - Atender requisições HTTP e processar repostas.
 - Gerenciar múltiplos sites (Domínios, IPs e Portas).
@@ -429,15 +431,15 @@ let y = "Hello World"; // Declaração com let e com atribuição.
 
 >>Diferentemente das variáveis (que podem receber outros valores no decorrer do código), as constantes `não` podem ter seus valores `alterados`. 
 
-### **Estruturas e tipos de dados:**
+## Estruturas e tipos de dados:
 
 <img src="./img/Figura_60.png" width="450px"> 
 
-## Number
+### Number
 
 >Os valores numéricos, sejam inteiros ou fracionários, são tratados no JavaScript pelo tipo number e armazenados no formato de ponto flutuante com tamanho de 64 bits.
 
-## Boolean
+### Boolean
 
 >Os valores lógicos `true` (verdadeiro) e `false` (falso) fazem parte do tipo booleano.
 
@@ -454,7 +456,7 @@ let y = "Hello World"; // Declaração com let e com atribuição.
 |E exclusivo (ambos true)	|x && y	|true se x e y são true|
 |Ou (pelo menos um true)|	x // y|	true se ou x ou y são true|
 
-## String
+### String
 
 - Sequência de caracteres Unicode - Além de o operador `+` poder ser usado para conectar `strings`
 
@@ -536,7 +538,7 @@ console.log (a);
 
 Valor: 2.56
 
-## Objetos
+### Objetos
 
 >Em JavaScript, os objetos são coleções de pares nome e valor, em que o nome é uma string e o valor pode ser de qualquer outro tipo, incluindo outros objetos. Os objetos são dinâmicos e podem receber novas propriedades e métodos a qualquer momento.
 
@@ -561,7 +563,7 @@ Valor: 2.56
 
 >>>`JSON` (**J**ava**S**cript **O**bject **N**otation) é a forma como se descrevem os objetos em `js`
 
-## Data
+### Data
 
 >As datas em JavaScript são objetos que armazenam as informações de data e hora. Para se criar um Objeto existem diversos construtores possíveis no JavaScript, são eles:
 
@@ -577,7 +579,7 @@ var a = new Date(2016, 0, 31); //Zero "0" significa janeiro e "11" dezembro
 console.log (a.toLocaleString()); //formatação LOCAL da data 
 ```
 
-## Arreys, vetores ou matrizes
+### Arreys, vetores ou matrizes
 
 Os arrays, vetores ou, ainda, matrizes também são tratados no JavaScript como objetos. A criação de um array pode ser feita por meio do construtor Array () com valores de inicialização dos elementos ou por meio da atribuição direta de um array representado por colchetes [ .. ] e os elementos separados por vírgulas. 
 
