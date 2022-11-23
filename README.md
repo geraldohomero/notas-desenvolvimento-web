@@ -593,6 +593,12 @@ console.log (b);
 var c = ["amarelo", "verde"];
 console.log (c);
 console.log (c.length);
+
+//   Saída:
+//   ["vermelho", "preto"]
+//   ["rosa", "azul"]
+//   ["amarelo", "verde"]
+//   2
 ```
 
 >Nos arrays, a propriedade `length` permite verificar o número de itens mantidos dentro do array.
@@ -616,3 +622,48 @@ console.log (c.length);
 |splice()|	Adiciona/remove elementos de um vetor
 |toString()|	Converte um vetor em uma string e retorna o resultado
 |valueOf()|	Retorna o valor primitivo de um vetor
+
+## Controle de Fluxo
+
+
+### Declaração de seleção
+
+```js
+if (expressão) { 
+   comandos_true 
+} 
+else { 
+   comandos_false 
+}
+```
+
+```js
+if (nota > 60) {
+alert ('O aluno foi aprovado.');
+}
+else {
+alert ('O aluno foi reprovado.');
+}
+```
+```js
+while (expressão) { 
+   comandos
+} 
+```
+
+### Declaração de repetição
+
+```js
+alert ('Iniciando a contagem regressiva.');
+
+// Declare uma variável para servir de contador
+var i = 3;
+
+// Inicie a contagem regressiva avaliando o contador
+while (i > 0) {
+      alert ('Contagem: ' + i );
+
+      // Diminui o contador em 1
+      i--;
+}
+```
