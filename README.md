@@ -320,7 +320,7 @@ Com o HTML 5, foram criados vários elementos novos com significados específico
 |`<td>`|	Define uma célula de dados dentro de uma tag `<tr>`.|
 
 ![Tabela-estrutura](./img/html-tabela-estrutura.png)
-[HTML - Tabela](./src/estrutura-tabela.html)
+[HTML - Tabela](./src/html/estrutura-tabela.html)
 
 ## Formulários
 
@@ -335,9 +335,9 @@ Com o HTML 5, foram criados vários elementos novos com significados específico
     <input type="submit" value="Ok">
 </form>
 ```
->[Código de exemplo](./src/form-simples.html)
+>[Código de exemplo](./src/html/form-simples.html)
 
->[Código de exemplo - Formulário](./src/form-completo.html)
+>[Código de exemplo - Formulário](./src/html/form-completo.html)
 
 `<input>` é  elemento mais comum nos formulários. Este elemento define campos ou entradas de dados e possui os seguintes atributos:
 
