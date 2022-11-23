@@ -433,3 +433,48 @@ let y = "Hello World"; // Declaração com let e com atribuição.
 |Negativo	|!x	|true se x é false|
 |E exclusivo (ambos true)	|x && y	|true se x e y são true|
 |Ou (pelo menos um true)|	x // y|	true se ou x ou y são true|
+
+## String
+
+- Sequência de caracteres Unicode - Além de o operador `+` poder ser usado para conectar `strings`
+
+- A barra invertida `\` é utilizada para tratar caracteres especiais:
+
+|Código|	Significado|
+|---|----|
+|`\0`	|Caracter NULL|
+|`\'`|	Aspas simples|
+|`\"`|	Aspas duplas|
+|`\\`|	Barra invertida|
+|`\n`	|Nova linha (ENTER)|
+|`\r`	|Retorno de Carro (CR)|
+|`\v`	|Tabulação vertical|
+|`\t`	|Tabulação|
+|`\b`	|Backspace|
+|`\f`	|form feed|
+|`\uXXXX`|	Caracter Unicode|
+|`\xXX`|	Caracter Latin-1|
+
+```html
+<script>
+var a = "Exemplo\nHello \'World\'";
+console.log (a);
+</script>
+```
+
+>A partir do [ES 6](https://www.w3schools.com/js/js_es6.asp), é possível definir `strings` também com o caractere ` ` ` **(crase)** e isso define uma Template String que permite o uso de expressões interpretáveis dentro do texto.
+
+```js
+// Criação básica de uma string
+let s1 = 'Em JavaScript '\n' significa é uma nova linha.'
+
+// Strings de várias linhas
+let s2 = 'Nas strings normais, não é possível
+descrever texto em várias linhas'  
+
+// Interpolação de expressões dentro de strings
+var nome = "Geraldo", tempo = "hoje";
+let s3 = 'Olá ${nome}, como está você ${tempo}?'  
+
+console.log('${s1} \n${s2} \n${s3}');
+```
