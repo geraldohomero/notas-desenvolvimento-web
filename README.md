@@ -23,8 +23,13 @@
 - [CSS](#css)
 - [JavaScript](#javascript)
     - [Variáveis e constantes](#variáveis-e-constantes)
-    - [Boolean](#boolean)
-    - [String](#string)
+    - [Estruturas e Tipos de Dados](#estruturas-e-tipos-de-dados)
+        - [Number](#number)
+        - [Boolean](#boolean)
+        - [String](#string)
+        - [Objetos](#objetos)
+        - [Data](#data)
+        - [Arreys, vetores ou matrizes](#arreys-vetores-ou-matrizes)
 
 
 <!--te-->
