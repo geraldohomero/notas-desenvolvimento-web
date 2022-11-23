@@ -25,7 +25,7 @@
     - [Variáveis e constantes](#variáveis-e-constantes)
     - [Boolean](#boolean)
     - [String](#string)
-    
+
 
 <!--te-->
 
@@ -405,11 +405,11 @@ permite a entrada de texto livre e com várias linhas. O atributo `rows` e `cols
 
 - `var`
 
->Variável de atuação dentro do escopo global
+>>Variável de atuação dentro do escopo global
 
 - `let`
 
->Variável de atuação dentro do escopo local
+>>Variável de atuação dentro do escopo local
 
 `Isso é utilizado quando queremos limitar a área em que uma variável é manipulada`
 ```js
@@ -420,11 +420,21 @@ let y = "Hello World"; // Declaração com let e com atribuição.
 
 - `const`
 
-> `const x = 3.14`
+>> `const x = 3.14`
 
->Diferentemente das variáveis (que podem receber outros valores no decorrer do código), as constantes `não` podem ter seus valores `alterados`. 
+>>Diferentemente das variáveis (que podem receber outros valores no decorrer do código), as constantes `não` podem ter seus valores `alterados`. 
+
+### **Estruturas e tipos de dados:**
+
+<img src="./img/Figura_60.png" width="450px"> 
+
+## Number
+
+>Os valores numéricos, sejam inteiros ou fracionários, são tratados no JavaScript pelo tipo number e armazenados no formato de ponto flutuante com tamanho de 64 bits.
 
 ## Boolean
+
+>Os valores lógicos `true` (verdadeiro) e `false` (falso) fazem parte do tipo booleano.
 
 |Operador	|Exemplo|	Resultado|
 |:----:|:------:|:------:|
@@ -520,3 +530,80 @@ console.log (a);
 2.56
 
 Valor: 2.56
+
+## Objetos
+
+>Em JavaScript, os objetos são coleções de pares nome e valor, em que o nome é uma string e o valor pode ser de qualquer outro tipo, incluindo outros objetos. Os objetos são dinâmicos e podem receber novas propriedades e métodos a qualquer momento.
+
+```js
+  var o = new Object();
+  o.name = "João"; //Objeto "o" passa a ter um atributo do tipo string que tem o nome "name"
+  o["age"] = 16;
+  console.log (o.name + "-" + o.age);
+
+  //Forma de Notação de Objetos (JSON):
+  var email = {    //as { indicam a criação de um objeto.
+    mensagem: "Olá Pamela",
+    detalhes: {    //novo objeto
+      para: "Pamela",
+      de: "João"
+  }
+ };
+ console.log (email.mensagem);
+```
+
+>Os `objetos` são dinâmicos e podem receber novas propriedades e métodos a qualquer momento
+
+>>>`JSON` (**J**ava**S**cript **O**bject **N**otation) é a forma como se descrevem os objetos em `js`
+
+## Data
+
+>As datas em JavaScript são objetos que armazenam as informações de data e hora. Para se criar um Objeto existem diversos construtores possíveis no JavaScript, são eles:
+
+- Date ()
+- Date (milissegundos)
+- Date (string)
+- Date (Ano, Mês, Dia, Hora, Minuto, segundos, milissegundos)
+
+```js
+var a = new Date();
+console.log (a.toLocaleString());
+var a = new Date(2016, 0, 31);
+console.log (a.toLocaleString());
+```
+
+## Arreys, vetores ou matrizes
+
+Os arrays, vetores ou, ainda, matrizes também são tratados no JavaScript como objetos. A criação de um array pode ser feita por meio do construtor Array () com valores de inicialização dos elementos ou por meio da atribuição direta de um array representado por colchetes [ .. ] e os elementos separados por vírgulas. 
+
+```js
+var a = new Array();
+a[0] = "vermelho";
+a[1] = "preto";
+console.log (a); var b = new Array("rosa", "azul");
+console.log (b); var c = ["amarelo", "verde"];
+console.log (c);
+console.log (c.length);
+```
+
+>Nos arrays, a propriedade length permite verificar o número de itens mantidos dentro do array.
+
+|Método	|Descrição|
+|----|-----|
+|concat()|	Junta dois ou mais vetores e retorna uma cópia dos vetores assoriados
+|fill()|	Preencher os elementos em um vetor com um valor estático
+|find()|	Retorna o valor do primeiro elemento em um vetor que atender ao filtro
+|findIndex()|	Retorna o índice do primeiro elemento em um vetor que atender ao filtro
+|forEach()|	Chama uma função para cada elemento do vetor
+|indexOf()|	Busca um elemento no vetor e retorna a sua posição
+|isArray()|	Verifica se um objeto é um vetor
+|join()|	Junta todos os elementos de um vetor em uma string
+|lastIndexOf()|	Pesquisar o vetor por um elemento, começando no final e retorna a sua posição
+|pop()|	Remove o último elemento de um vetor e retorna o elemento
+|push()|	Adiciona novos elementos para o final de um vetor e retorna o novo comprimento
+|reverse()|	Inverte a ordem dos elementos em um vetor
+|slice()|	Seleciona uma parte de um vetor e retorna o novo vetor
+|sort()	|Classifica os elementos de um vetor
+|splice()|	Adiciona/remove elementos de um vetor
+|toString()|	Converte um vetor em uma string e retorna o resultado
+|valueOf()|	Retorna o valor primitivo de um vetor
