@@ -21,6 +21,11 @@
     - [Tabelas](#tabelas)
     - [Formulários](#formulários)
 - [CSS](#css)
+- [JavaScript](#javascript)
+    - [Variáveis e constantes](#variáveis-e-constantes)
+    - [Boolean](#boolean)
+    - [String](#string)
+    
 
 <!--te-->
 
@@ -478,3 +483,40 @@ let s3 = 'Olá ${nome}, como está você ${tempo}?'
 
 console.log('${s1} \n${s2} \n${s3}');
 ```
+
+- Além disso, strings definidas via ` ` ` (crase) podem interpretar expressões via construção.
+- `${ expressão }`:
+
+```js
+var a = 5;
+var b = 10;
+console.log (`a + b = ${a + b} e \n
+              a * b = ${a * b}. `);
+```
+
+- Conversão de `string` em número
+    - `parseInt ();`
+    - `parseFloat ();`
+
+- Conversão de número para `string`
+    - Automática
+
+```js
+var a = parse.Int ("256");
+console.log (a);
+var a = parseInt ("2.56");
+console.log (a);
+var a = parseFloat ("2.56");
+console.log (a);
+var a = "Valor: " + 2.56;
+console.log (a);
+```
+**Saída:**
+
+256
+
+2
+
+2.56
+
+Valor: 2.56
