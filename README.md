@@ -32,7 +32,9 @@
         - [Objetos](#objetos)
             - [Data](#data)
             - [Arreys, vetores ou matrizes](#arreys-vetores-ou-matrizes)
-
+    - [Controle de Fluxo](#controle-de-fluxo)
+        - [Declaração de seleção](#declaração-de-seleção)
+        - [Declaração de repetição](#declaração-de-repetição)
 
 <!--te-->
 
