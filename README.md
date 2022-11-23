@@ -591,7 +591,7 @@ console.log (c);
 console.log (c.length);
 ```
 
->Nos arrays, a propriedade length permite verificar o número de itens mantidos dentro do array.
+>Nos arrays, a propriedade `length` permite verificar o número de itens mantidos dentro do array.
 
 |Método	|Descrição|
 |----|-----|
