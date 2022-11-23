@@ -28,8 +28,8 @@
         - [Boolean](#boolean)
         - [String](#string)
         - [Objetos](#objetos)
-        - [Data](#data)
-        - [Arreys, vetores ou matrizes](#arreys-vetores-ou-matrizes)
+            - [Data](#data)
+            - [Arreys, vetores ou matrizes](#arreys-vetores-ou-matrizes)
 
 
 <!--te-->
@@ -571,10 +571,10 @@ Valor: 2.56
 - Date (Ano, Mês, Dia, Hora, Minuto, segundos, milissegundos)
 
 ```js
-var a = new Date();
-console.log (a.toLocaleString());
-var a = new Date(2016, 0, 31);
-console.log (a.toLocaleString());
+var a = new Date(); //sem parâmetros: data corrente
+console.log (a.toLocaleString()); //formatação LOCAL da data
+var a = new Date(2016, 0, 31); //Zero "0" significa janeiro e "11" dezembro
+console.log (a.toLocaleString()); //formatação LOCAL da data 
 ```
 
 ## Arreys, vetores ou matrizes
@@ -585,8 +585,12 @@ Os arrays, vetores ou, ainda, matrizes também são tratados no JavaScript como 
 var a = new Array();
 a[0] = "vermelho";
 a[1] = "preto";
-console.log (a); var b = new Array("rosa", "azul");
-console.log (b); var c = ["amarelo", "verde"];
+console.log (a); 
+
+var b = new Array("rosa", "azul");
+console.log (b); 
+
+var c = ["amarelo", "verde"];
 console.log (c);
 console.log (c.length);
 ```
