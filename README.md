@@ -246,6 +246,7 @@ h1 {
   <li> terceiro item</li>
 </ol>
 ...
+
 ```
 >As listas de definições apresentam os itens e suas definições indentadas. Essas listas possuem elementos específicos para os termos `(<dt> .. </dt>)` e para as suas definições `(<dd> .. </dd>)`, conforme mostrado no exemplo a seguir. 
 
