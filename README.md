@@ -865,3 +865,120 @@ Exemplos:
                 function () { alert("Hello World!"); }, false);
 </script>
 ```
+
+### JSON
+
+ >O JSON é muito utilizado para descrever dados que são trocados entre as aplicações. Isso normalmente é feito quando uma aplicação interage com uma Application Programming Interface (API). O JSON é utilizado tanto no envio de dados da aplicação cliente para a API quanto no retorno de dados da API para a aplicação cliente. O JSON substitui formatos anteriores, sendo o XML o seu principal concorrente. Muitas APIs oferecem os dados tanto no formato XML quanto no formato JSON. Pela simplicidade, os desenvolvedores atualmente acabam preferindo o formato JSON em detrimento do XML.
+
+- XML
+
+```xml
+<beer>
+       <name>Asahi Draft Beer</name>
+       <brewer>
+              <name>Asahi</name>
+              <country>Japan</country>
+      </brewer>
+      <calories>41</calories>
+      <alcohol>5.21</alcohol>
+</beer>
+```
+
+- JSON
+```json
+{
+    name: 'Asahi Draft Beer',
+    brewer: {
+       name: 'Asahi',
+       country: 'Japan'
+    },
+    calories: 41,
+    alcohol: 5.21
+}
+```
+
+#### Sintaxe
+
+A forma de se descrever objetos no formato JSON é muito simples e se baseia fortemente na forma de se descrever os próprios valores de dados na Linguagem JavaScript. Os atributos de um objeto descrito em JSON são delimitados por chaves `{` e `}` e utiliza uma estrutura de par nome e valor. Veja no exemplo a seguir a forma de representar um objeto de contato utilizando a notação JSON. O objeto possui um atributo do tipo number (id) e três atributos do tipo string (nome, e-mail e telefone). Se você observar, o valor colocado após o caractere de dois-pontos `:` indica o tipo do dado para o atributo que vem antes desse caractere. Como exemplo, o tipo do atributo id é `number`.
+
+```json
+{
+    "contatos": [
+                  {
+                     "id": 1,
+                     "nome": "Antônio dos Anjos",
+                     "email": "antonio(dabc.com.br",
+                     "telefone": "031-98232-4455"
+                  },
+                  {
+                     "id": 2,
+                     "nome": "Carlos Amaral",
+                     "email": "carlosfxyz.com.br",
+                     "telefone": "031-97628-3349"
+                  }
+                ]
+}
+```
+>IMPORTANTE:  ao representar um objeto dentro de um código JavaScript é possível colocar os nomes dos atributos sem a necessidade de aspas, porém o padrão JSON exige que as aspas sejam utilizadas. Ao trocar dados com outras aplicações, é recomendado sempre colocar aspas nos nomes dos atributos.
+
+Para permitir a conversão de objetos em texto e vice-versa, a linguagem JavaScript fornece um objeto denominado JSON que apresemta dois métodos:
+
+- `parse ()` - recebe um valor do tipo string e retorna o objeto representado neste texto na notação JSON;
+- `stringify ()` – recebe um valor do tipo object e retorna o texto representativo em notação JSON.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Laboratório Javascript</title>
+  <script>
+  // Texto no formato JSON
+  var textoJSON = '{ "contatos": [
+                       { "nome": "Antônio dos Anjos",
+                         "email": "antonio(abc.com.br",
+                         "telefone": "031-98232-4455"
+                       },
+                       { "nome": "Carlos Amaral",
+                         "email": "carlosOxyz.com.br",
+                         "telefone": "031-97628-3349"
+                       }
+                     ]
+                   }';
+
+  // converte JSON em Objeto Javascript agenda
+  var agenda = JSON.parse (textoJSON);
+
+  function procContatos () {
+    lista = "";
+    for (let i = 0; i < agenda.contatos.length; i++) {
+      lista += agenda.contatos[i].nome + " - " +
+          agenda.contatos[i].email + " - " +
+          agenda.contatos[i].telefone + "<br>";
+   }
+   document.getElementById('saida_contatos').innerHTML = lista;
+}
+
+  function printJSON () {
+    document.getElementById('saida_json').innerHTML =
+       JSON.stringify(agenda,null,2);
+  }
+
+ </script>
+</head>
+
+<body>
+    <h1>Saída Processada</h1>
+    <button type="button" onclick="procContatos ();">
+        Processa Lista de Contatos</button>
+    <div id="saida_contatos"></div>
+
+    <h1>Saída JSON</h1>
+    <button type="button" onClick="printJSON ();">
+        Imprime Objeto JSON</button>
+    <pre id="saida_json"><pre>
+</body>
+
+</html>
+```
+[JSON - Mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/JSON)
