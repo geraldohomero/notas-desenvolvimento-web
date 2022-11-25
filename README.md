@@ -35,6 +35,8 @@
     - [Controle de Fluxo](#controle-de-fluxo)
         - [Declaração de seleção](#declaração-de-seleção)
         - [Declaração de repetição](#declaração-de-repetição)
+    - [Funções](#funções)
+    - [Modelo de Objetos (DOM)](#modelo-de-objetos-dom)
 
 <!--te-->
 
@@ -708,3 +710,43 @@ else {
 [Exemplo JavaScript](./src/js/avaliacoes-notas.js)
 
 >[Controle de Fluxo e manipulação de erro - Mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
+
+## Funções
+
+- Exemplo anterior usando função
+```js
+var avaliacoes = ["PROVA 1", "PROVA 2", "TRABALHO FINAL"]
+var cont = 0;
+
+var notaAluno= [35, 20, 0.3];
+function avaliaAluno () {
+    var somaAluno = 0;
+
+    for (let x = 0; x < avaliacoes.length; x++) {
+        console.log(`A nota para a ${avaliacoes[x]} foi ${notaAluno[x]}`);
+        //soma = soma + notaAluno[x];
+        somaAluno += notaAluno[x];
+    }
+
+    if (somaAluno >= 60) {
+        console.log (`Aluno APROVADO! Nota final foi de ${somaAluno}`);
+    }
+    else {
+        console.log (`Aluno REPROVADO! Nota final foi de ${somaAluno}`);
+    }
+}
+```
+
+## Modelo de Objetos (DOM)
+
+O Document Object Model (DOM) é uma API orientada a objetos criada para permitir a manipulação de estruturas do navegador e da página Web (conteúdo, estrutura e estilos). O DOM é um padrão W3C, independente de plataforma e linguagem
+
+A relação a seguir apresenta o significado de cada um dos principais elementos disponíveis por meio do DOM:
+
+- window – representa a janela do navegador
+- navigator – contém informações sobre o navegador
+- screen – contém informações sobre a tela do cliente
+- history – contém os sites visitados
+- location – contém informações sobre a URL atual
+- document – representa um documento HTML e pode ser usado para acessar todos os outros elementos
+- Outros – cada elemento da linguagem HTML possui um objeto associado que pode ser utilizado para montar a dinâmica das páginas Web, são eles: anchor, area, base, body, button, event, form, frame, frameset, iframe, image, input button, input checkbox, input file, input hidden, input password, input radio, input reset, input submit, input text, link, meta, object, option, select, style, table, tablecell, tablerow, textarea.
