@@ -650,13 +650,13 @@ else {
 alert ('O aluno foi reprovado.');
 }
 ```
-```js
-while (expressão) { 
-   comandos
-} 
-```
 
 ### Declaração de repetição
+```js
+while (condicao) { 
+   comando da repetição;
+} 
+```
 
 ```js
 alert ('Iniciando a contagem regressiva.');
@@ -672,3 +672,33 @@ while (i > 0) {
       i--;
 }
 ```
+
+```js
+for (inicializacao; condicao; alteracao) {
+    comando da repeticao;
+}
+```
+
+### Exemplo
+
+```js
+var avaliacoes = ["PROVA 1", "PROVA 2", "TRABALHO FINAL"]
+var cont = 0;
+
+var notaAluno= [35, 20, 0.3];
+var somaAluno = 0;
+
+for (let x = 0; x < avaliacoes.length; x++) {
+    console.log(`A nota para a ${avaliacoes[x]} foi ${notaAluno[x]}`);
+    //soma = soma + notaAluno[x];
+    somaAluno += notaAluno[x];
+}
+
+if (somaAluno >= 60) {
+    console.log (`Aluno APROVADO! Nota final foi de ${somaAluno}`);
+}
+else {
+    console.log (`Aluno REPROVADO! Nota final foi de ${somaAluno}`);
+}
+```
+[Exemplo JavaScript](./src/js/avaliacoes-notas.js)
