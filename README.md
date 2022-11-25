@@ -750,3 +750,117 @@ A relação a seguir apresenta o significado de cada um dos principais elementos
 - location – contém informações sobre a URL atual
 - document – representa um documento HTML e pode ser usado para acessar todos os outros elementos
 - Outros – cada elemento da linguagem HTML possui um objeto associado que pode ser utilizado para montar a dinâmica das páginas Web, são eles: anchor, area, base, body, button, event, form, frame, frameset, iframe, image, input button, input checkbox, input file, input hidden, input password, input radio, input reset, input submit, input text, link, meta, object, option, select, style, table, tablecell, tablerow, textarea.
+
+![DOM](./img/DOM.png)
+
+### Objeto `window`
+
+Para gerenciar o armazenamento de dados no Navegador, o objeto window fornece dois repositórios: o localStorage e o sessionStorage. O repositório localStorage permite que os dados sejam mantidos, mesmo que o Navegador seja fechado. 
+
+```js
+sessionStorage.setItem ('login', 'nomedeusuario');
+alert ('O usuário logado é: '+ sessionStorage.getItem ('login'));
+```
+
+Para programar algumas ações de acordo com o tempo, objeto window fornece alguns métodos muito úteis ao desenvolvedor Web:
+
+- `setInterval (função, intervalo)` – informa o Navegador para executar uma função continuamente a cada intervalo, medido em milissegundos;
+- `clearInterval ()` – cancela a repetição da função;
+- `setTimeout (função, intervalo)` – agenda uma função no Navegador para ser executada depois de um intervalo em milissegundos.
+- `clearTimeout ()` – cancela o agendamento.
+ 
+ ### Objeto `document`
+
+ |Propriedade|Descrição|
+ |----|------|
+|addEventListener ()|	Associa uma função de tratamento a um dos eventos do documento|
+|baseURI|	Retorna a URI base para o documento|
+|body|	Obtém ou altera o elemento `<body>` do documento|
+|cookie|	Retorna todos os cookies definidos pelo documento|
+|characterSet|	Retorna a codificação de caracteres do documento|
+|documentElement|	Retorna o elemento `<html>` do documento|
+|documentURI|	Obtém ou altera a URI do documento|
+|forms|	Retorna uma coleção (array) com os formulários do documento|
+|getElementById ()|	Retorna o elemento que possui o ID passado como argumento|
+|getElementsByClassName ()|	Retorna uma coleção (array) de elementos com todos aqueles que possuem a classe passada como argumento|
+|getElementsByName ()|	Retorna uma coleção (array) de elementos com o nome passado como argumento|
+|getElementsByTagName ()|	Retorna uma coleção (array) de elementos cuja tag é igual ao argumento passado
+|images|	Retorna uma coleção (array) com as imagens do documento 
+|lastModified|	Retorna a data e hora de modificação do documento
+|links|	Retorna uma coleção (array) de elementos que possuem o atributo href (<a>) 
+|querySelector ()|	Retorna o primeiro elemento do documento selecionado pelo seletor CSS passado como argumento
+|querySelectorAll ()|	Retorna uma coleção (array) com todos os elementos do documento selecionados pelo seletor CSS passado como argumento
+|removeEventListener()|	Desassocia a função de tratamento do evento do documento
+|scripts|	Retorna uma coleção (array) de scripts associados ao documento
+|title|	Obtém e altera o título do documento
+|URL|	Retorna a URL complete do documento carregado
+
+[HTML DOM Documents - W3Schools](https://www.w3schools.com/jsref/dom_obj_document.asp)
+
+- Exemplo:
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+         <title>Laboratório Javascript</title>
+         <script type="text/javascript">
+                function Executar() {
+                       document.getElementById('saida').innerHTML = Date();
+                 }
+        </script> <!-- Sempre bom o JavaScript vir separado do HTML !-->
+</head>
+
+<body>
+       <button type="button" onclick="Executar ();">Disparar</button>
+       <h1>Saída</h1>
+       <div id="saida"></div>
+</body>
+
+</html>
+```
+
+### Eventos
+
+>>O DOM define para cada elemento da Linguagem HTML um conjunto de eventos controlados pelo Navegador que nos permite criar pontos de disparo de código para montar a dinâmica da página em questão.
+
+|Evento|	Quando ocorre...|	Controle|
+|---|---|---|
+|click	|Usuário clica no link ou element de formulário|	onclick
+|change|	Usuário altera o valor de elemento de texto, textarea ou seleção	|onchange
+|focus|	Usuário posiciona o foco em um element de formulário	|onfocus
+|blur|	Usuário tira o foco de um element de formulário|	onblur
+|mouseover|	Usuário move o mouse sobre um elemento	|onmouseover
+|mouseout|	Usuário move o mouse para fora de um elemento	|onmouseout
+|select|	Usuário seleciona um campo de entrada de formulários|	onselect
+|submit	|Usuário submete um formulário	|onsubmit
+|resize	|Usuário redimensiona a janela do browser	|onresize
+|load	|O elemento é carregada no browser (window, body, frame, img, link)|	onload
+|unload	|Usuário sai da página|	onunload
+
+Exemplos:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exemplo DOM - Eventos</title>
+</head>
+    <body>
+      <p onmouseover="this.style.color='red';"
+         onmouseout="this.style.color='black';" >
+         Olá Mundo
+      </p>
+    </body>
+</html>
+```
+
+```html
+<button id="btnHello">Hello</button>
+
+<script>
+       var elem = document.getElementById('btnHello');
+       elem.addEventListener('click',
+                function () { alert("Hello World!"); }, false);
+</script>
+```
