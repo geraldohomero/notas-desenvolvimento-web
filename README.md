@@ -706,3 +706,5 @@ else {
 }
 ```
 [Exemplo JavaScript](./src/js/avaliacoes-notas.js)
+
+>[Controle de Fluxo e manipulação de erro - Mozilla.org](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide/Control_flow_and_error_handling)
