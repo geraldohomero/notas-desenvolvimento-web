@@ -633,6 +633,8 @@ console.log (c.length);
 
 ### Declaração de seleção
 
+-`if` e `else`
+
 ```js
 if (expressão) { 
    comandos_true 
@@ -652,6 +654,8 @@ alert ('O aluno foi reprovado.');
 ```
 
 ### Declaração de repetição
+
+- `while`
 ```js
 while (condicao) { 
    comando da repetição;
@@ -672,7 +676,7 @@ while (i > 0) {
       i--;
 }
 ```
-
+- `for`
 ```js
 for (inicializacao; condicao; alteracao) {
     comando da repeticao;
