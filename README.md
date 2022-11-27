@@ -883,7 +883,6 @@ Exemplos:
       <alcohol>5.21</alcohol>
 </beer>
 ```
-
 - JSON
 ```json
 {
